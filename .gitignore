@@ -1,0 +1,9 @@
+.preview-http.err.log
+.preview-http.log
+.preview-http.out.log
+preview-node.log
+preview-server.log
+
+artifacts/browser_profile/
+
+*.tmp
