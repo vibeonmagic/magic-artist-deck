@@ -114,7 +114,7 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
   -webkit-background-clip:text;
   background-clip:text;
   -webkit-text-fill-color:transparent;
-  animation:textShimmer 5s ease-in-out infinite;
+  animation:textShimmer 3s ease-in-out 1 forwards;
 }
 .cta-btn .cta-arrow {
   display:inline-block;
@@ -3327,6 +3327,11 @@ function go(n) {
   updatePresentArrows();
   document.getElementById('progress').style.width = ((cur + 1) / TOTAL * 100) + '%';
   updateFanverseToggleUi();
+  /* Re-trigger cover shimmer when landing on slide 0 */
+  if (cur === 0) {
+    var el = document.querySelector('.cover-title');
+    if (el) { el.style.animation = 'none'; el.offsetHeight; el.style.animation = ''; }
+  }
 }
 function next() { if (cur < TOTAL - 1) go(cur + 1); }
 function prev() { if (cur > 0) go(cur - 1); }
