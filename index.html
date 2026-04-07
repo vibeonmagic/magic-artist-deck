@@ -2062,8 +2062,12 @@ body.present-mode #present-arrows { display:flex !important; }
         </defs>
 
         <!-- Section labels -->
-        <text x="255" y="66" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" data-en="Release" data-fr="Sortie">Release</text>
-        <text x="910" y="20" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" data-en="Tour" data-fr="Tournée">Tour</text>
+        <text class="label-release" x="255" y="66" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Release" data-fr="Sortie">Release
+          <animate attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="0.5s" fill="freeze"/>
+        </text>
+        <text class="label-tour" x="910" y="20" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" opacity="0.3" data-en="Tour" data-fr="Tournée">Tour
+          <animate attributeName="opacity" values="0.3;1;1;0.7" keyTimes="0;0.3;0.7;1" dur="2s" begin="2.5s" fill="freeze"/>
+        </text>
         <!-- dashed divider removed -->
 
         <!-- Baseline -->
