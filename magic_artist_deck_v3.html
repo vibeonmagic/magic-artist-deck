@@ -68,38 +68,35 @@ html, body { width:100%; height:100%; background:var(--bg); font-family:'Gilroy'
 .cta-btn {
   position:relative;
   display:inline-block;
-  padding:2px 0;
-  border-radius:14px;
+  border-radius:12px;
   overflow:hidden;
   transition:transform 0.2s ease, box-shadow 0.2s ease;
 }
-.cta-btn:hover {
-  transform:translateY(-2px);
-  box-shadow:0 8px 32px rgba(31,206,255,0.3);
-}
-.cta-btn .sb-bottom {
+.cta-btn::before {
+  content:'';
   position:absolute;
   width:300%; height:50%;
   bottom:-11px; right:-250%;
   border-radius:50%;
-  opacity:0.6;
-  background:radial-gradient(circle, rgba(31,206,255,0.7), transparent 6%);
+  opacity:0.65;
+  background:radial-gradient(circle, rgba(31,206,255,0.75), transparent 6%);
   animation:star-border-move 5s linear infinite;
+  pointer-events:none;
 }
-.cta-btn .sb-top {
+.cta-btn::after {
+  content:'';
   position:absolute;
   width:300%; height:50%;
   top:-11px; left:-250%;
   border-radius:50%;
-  opacity:0.6;
-  background:radial-gradient(circle, rgba(0,130,255,0.7), transparent 6%);
+  opacity:0.65;
+  background:radial-gradient(circle, rgba(0,130,255,0.75), transparent 6%);
   animation:star-border-move 5s linear infinite reverse;
+  pointer-events:none;
 }
-.cta-btn .sb-inner {
-  position:relative;
-  z-index:1;
-  border-radius:12px;
-  overflow:hidden;
+.cta-btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(31,206,255,0.3);
 }
 .cta-btn .cta-arrow {
   display:inline-block;
@@ -2613,12 +2610,8 @@ body.present-mode #present-arrows { display:flex !important; }
     <p style="margin-top:40px;font-size:18px;color:var(--muted);font-weight:300;" data-en="Ready to see what your Fanverse can do?" data-fr="Prêt à découvrir ce que votre Fanverse peut faire ?">
       Ready to see what your Fanverse can do?
     </p>
-    <a class="cta-btn" href="https://calendly.com/magic-app" target="_blank" style="margin-top:18px;text-decoration:none;">
-      <div class="sb-bottom"></div>
-      <div class="sb-top"></div>
-      <div class="sb-inner" style="padding:14px 40px;background:var(--gp);font-family:'Gilroy',sans-serif;font-weight:700;font-size:17px;color:#fff;letter-spacing:0.03em;" data-i18n="html" data-en-html="Book a call <span class='cta-arrow'>→</span>" data-fr-html="Réserver un appel <span class='cta-arrow'>→</span>">
-        Book a call <span class="cta-arrow">→</span>
-      </div>
+    <a class="cta-btn" href="https://calendly.com/magic-app" target="_blank" style="display:inline-block;margin-top:18px;padding:14px 40px;background:var(--gp);font-family:'Gilroy',sans-serif;font-weight:700;font-size:17px;color:#fff;text-decoration:none;letter-spacing:0.03em;" data-i18n="html" data-en-html="Book a call <span class='cta-arrow'>→</span>" data-fr-html="Réserver un appel <span class='cta-arrow'>→</span>">
+      Book a call <span class="cta-arrow">→</span>
     </a>
   </div>
 </div>
