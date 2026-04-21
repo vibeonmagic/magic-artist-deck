@@ -2004,63 +2004,168 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="Every fan has <span class='gt'>a place</span>" data-fr-html="Chaque fan a <span class='gt'>sa place</span>">
         Every fan has <span class="gt">a place</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:900px;" data-en="The arena holds 480,000 across 16 nights. The Fanverse is where every fan, with or without a ticket, can connect, grow closer to Céline, and be rewarded for their devotion." data-fr="La salle accueille 480 000 personnes sur 16 soirs. Le Fanverse, c'est l'endroit où chaque fan, avec ou sans billet, peut se connecter, se rapprocher de Céline, et être récompensé pour sa dévotion.">
-        The arena holds 480,000 across 16 nights. The Fanverse is where every fan, with or without a ticket, can connect, grow closer to Céline, and be rewarded for their devotion.
+      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:900px;" data-en="The arena holds 480,000 across 16 nights. Magic activations bring every other fan into the story, at every key moment of Paris 2026." data-fr="La salle accueille 480 000 personnes sur 16 soirs. Les activations Magic font entrer chaque autre fan dans l'histoire, à chaque moment clé de Paris 2026.">
+        The arena holds 480,000 across 16 nights. Magic activations bring every other fan into the story, at every key moment of Paris 2026.
       </p>
     </div>
-    <!-- Capacity comparison: Arena vs Fanverse -->
-    <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:16px 0 0;">
-      <svg width="100%" height="100%" viewBox="0 0 1340 440" preserveAspectRatio="xMidYMid meet" fill="none">
+    <!-- Timeline -->
+    <div style="flex:1;display:flex;align-items:center;">
+      <svg width="100%" height="100%" viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none">
         <defs>
-          <radialGradient id="cap-arena" cx="50%" cy="50%">
-            <stop offset="0%" stop-color="#1FCEFF" stop-opacity="0.4"/>
-            <stop offset="75%" stop-color="#0082FF" stop-opacity="0.08"/>
-            <stop offset="100%" stop-color="#0082FF" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="cap-fv" cx="50%" cy="50%">
-            <stop offset="0%" stop-color="#CC2BFB" stop-opacity="0.28"/>
-            <stop offset="70%" stop-color="#8C3CFF" stop-opacity="0.06"/>
-            <stop offset="100%" stop-color="#8C3CFF" stop-opacity="0"/>
-          </radialGradient>
+          <linearGradient id="tlg" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0082FF"/><stop offset="100%" stop-color="#1FCEFF"/>
+          </linearGradient>
+          <linearGradient id="tlf" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1FCEFF" stop-opacity="0.55"/><stop offset="100%" stop-color="#0082FF" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="trd-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.22)"/><stop offset="100%" stop-color="rgba(255,255,255,0.01)"/>
+          </linearGradient>
+          <filter id="txt-glow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="5" result="blur"/>
+            <feFlood flood-color="#1FCEFF" flood-opacity="0.75" result="color"/>
+            <feComposite in="color" in2="blur" operator="in" result="glow"/>
+            <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
         </defs>
 
-        <!-- Arena (left) -->
-        <circle cx="340" cy="220" r="110" fill="url(#cap-arena)"/>
-        <circle cx="340" cy="220" r="110" fill="none" stroke="rgba(31,206,255,0.5)" stroke-width="1.5"/>
-        <text x="340" y="210" text-anchor="middle" font-family="Gilroy,sans-serif" font-weight="800" font-size="46" fill="#fff" letter-spacing="-0.01em">480,000</text>
-        <text x="340" y="244" text-anchor="middle" font-family="Gilroy,sans-serif" font-weight="600" font-size="12" fill="rgba(255,255,255,0.6)" letter-spacing="0.18em" data-en="IN THE ARENA" data-fr="DANS LA SALLE">IN THE ARENA</text>
+        <!-- Section labels -->
+        <text x="255" y="70" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" data-en="Announcement" data-fr="Annonce">Announcement</text>
+        <text x="910" y="12" text-anchor="middle" fill="white" font-family="Gilroy,sans-serif" font-weight="700" font-size="16" filter="url(#txt-glow)" data-en="Paris 2026" data-fr="Paris 2026">Paris 2026</text>
+        <!-- dashed divider removed -->
 
-        <!-- Plus connector -->
-        <text x="670" y="238" text-anchor="middle" font-family="Gilroy,sans-serif" font-weight="300" font-size="54" fill="rgba(255,255,255,0.3)">+</text>
+        <!-- Baseline -->
+        <line x1="20" y1="210" x2="1320" y2="210" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
 
-        <!-- Fanverse (right) -->
-        <circle cx="1000" cy="220" r="210" fill="url(#cap-fv)"/>
-        <circle cx="1000" cy="220" r="210" fill="none" stroke="rgba(204,43,251,0.45)" stroke-width="1.5" stroke-dasharray="8 5"/>
-        <text x="1000" y="212" text-anchor="middle" font-family="Gilroy,sans-serif" font-weight="800" font-size="38" fill="#fff" letter-spacing="-0.01em" data-en="Every fan welcome" data-fr="Chaque fan accueilli">Every fan welcome</text>
-        <text x="1000" y="246" text-anchor="middle" font-family="Gilroy,sans-serif" font-weight="600" font-size="12" fill="rgba(255,255,255,0.6)" letter-spacing="0.18em" data-en="IN THE FANVERSE" data-fr="DANS LE FANVERSE">IN THE FANVERSE</text>
+        <!-- FANS IN THE VENUE — near-zero most of the time, spike during the 16 Paris nights -->
+        <path d="M 20 210 L 640 210 C 700 210, 740 175, 800 140 L 1020 140 C 1080 175, 1120 210, 1200 210 L 1320 210 L 20 210 Z"
+          fill="url(#trd-fill)"/>
+        <path d="M 20 210 L 640 210 C 700 210, 740 175, 800 140 L 1020 140 C 1080 175, 1120 210, 1200 210 L 1320 210"
+          stroke="rgba(255,255,255,0.25)" stroke-width="1.6" fill="none"/>
 
-        <!-- Subtle dots inside Fanverse (community feel) -->
-        <g opacity="0.55">
-          <circle cx="850" cy="90" r="2" fill="#fff"/>
-          <circle cx="910" cy="70" r="1.5" fill="#fff"/>
-          <circle cx="970" cy="85" r="2" fill="#fff"/>
-          <circle cx="1030" cy="65" r="1.5" fill="#fff"/>
-          <circle cx="1090" cy="80" r="2" fill="#fff"/>
-          <circle cx="1150" cy="100" r="1.5" fill="#fff"/>
-          <circle cx="820" cy="130" r="1.5" fill="#fff"/>
-          <circle cx="1175" cy="150" r="2" fill="#fff"/>
-          <circle cx="810" cy="190" r="2" fill="#fff"/>
-          <circle cx="1185" cy="205" r="1.5" fill="#fff"/>
-          <circle cx="805" cy="250" r="1.5" fill="#fff"/>
-          <circle cx="1185" cy="260" r="2" fill="#fff"/>
-          <circle cx="820" cy="310" r="2" fill="#fff"/>
-          <circle cx="1170" cy="315" r="1.5" fill="#fff"/>
-          <circle cx="850" cy="355" r="1.5" fill="#fff"/>
-          <circle cx="910" cy="375" r="2" fill="#fff"/>
-          <circle cx="970" cy="360" r="1.5" fill="#fff"/>
-          <circle cx="1030" cy="380" r="2" fill="#fff"/>
-          <circle cx="1090" cy="365" r="1.5" fill="#fff"/>
-          <circle cx="1150" cy="345" r="2" fill="#fff"/>
+        <!-- FANS REACHED WITH MAGIC — flat line at the 9M level across the whole arc -->
+        <path d="M 20 72 C 300 68, 700 76, 1000 70 C 1160 68, 1260 72, 1320 70 L 1320 210 L 20 210 Z"
+          fill="url(#tlf)" opacity="0.45"/>
+        <path d="M 20 72 C 300 68, 700 76, 1000 70 C 1160 68, 1260 72, 1320 70"
+          stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
+
+        <!-- Inline scale labels -->
+        <text x="34" y="64" font-family="Gilroy,sans-serif" font-size="12" font-weight="800" fill="#1FCEFF" letter-spacing="0.04em">Room for 9M</text>
+        <text x="910" y="128" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.55)" letter-spacing="0.04em">480K seats</text>
+
+        <!-- Tick lines from dots to icon row — matched to icon colours -->
+        <line x1="70" y1="70" x2="70" y2="234" stroke="rgba(32,212,184,0.25)" stroke-width="1"/>
+        <line x1="165" y1="70" x2="165" y2="234" stroke="rgba(232,160,32,0.2)" stroke-width="1"/>
+        <line x1="255" y1="70" x2="255" y2="234" stroke="rgba(32,212,184,0.25)" stroke-width="1"/>
+        <line x1="355" y1="70" x2="355" y2="234" stroke="rgba(204,43,251,0.2)" stroke-width="1"/>
+        <line x1="460" y1="70" x2="460" y2="234" stroke="rgba(32,212,184,0.25)" stroke-width="1"/>
+        <line x1="560" y1="70" x2="560" y2="234" stroke="rgba(204,43,251,0.2)" stroke-width="1"/>
+        <line x1="695" y1="70" x2="695" y2="234" stroke="rgba(232,160,32,0.2)" stroke-width="1"/>
+        <line x1="790" y1="70" x2="790" y2="234" stroke="rgba(232,160,32,0.2)" stroke-width="1"/>
+        <line x1="910" y1="70" x2="910" y2="234" stroke="rgba(204,43,251,0.25)" stroke-width="1"/>
+        <line x1="990" y1="70" x2="990" y2="234" stroke="rgba(32,212,184,0.25)" stroke-width="1"/>
+        <line x1="1105" y1="70" x2="1105" y2="234" stroke="rgba(232,160,32,0.2)" stroke-width="1"/>
+        <line x1="1220" y1="70" x2="1220" y2="234" stroke="rgba(32,212,184,0.25)" stroke-width="1"/>
+
+        <!-- Dots on Magic line — matched to icon colours -->
+        <circle cx="70" cy="70" r="4.5" fill="#20D4B8"/><!-- Tease: megaphone cyan -->
+        <circle cx="165" cy="70" r="4.5" fill="#e8a020"/><!-- Pre-orders: coin amber -->
+        <circle cx="255" cy="70" r="4.5" fill="#20D4B8"/><!-- Listening events: megaphone cyan -->
+        <circle cx="355" cy="70" r="4.5" fill="#CC2BFB"/><!-- Gamified boosts: gamepad purple -->
+        <circle cx="460" cy="70" r="4.5" fill="#20D4B8"/><!-- Fan trends: megaphone cyan -->
+        <circle cx="560" cy="70" r="4.5" fill="#CC2BFB"/><!-- Gamified comps: gamepad purple -->
+        <circle cx="695" cy="70" r="4.5" fill="#e8a020"/><!-- Ticket comp: coin amber -->
+        <circle cx="790" cy="70" r="4.5" fill="#e8a020"/><!-- VIP upgrades: coin amber -->
+        <circle cx="910" cy="70" r="5.5" fill="#CC2BFB"/><!-- Live voting: gamepad purple -->
+        <circle cx="990" cy="70" r="4.5" fill="#20D4B8"/><!-- BTS updates: megaphone cyan -->
+        <circle cx="1105" cy="70" r="4.5" fill="#e8a020"/><!-- Merch: coin amber -->
+        <circle cx="1220" cy="70" r="4.5" fill="#20D4B8"/><!-- Next-city: megaphone cyan -->
+
+        <!-- ICONS row (y≈228–244) -->
+        <g transform="translate(0,10)">
+        <!-- Tease: megaphone x=70 -->
+        <g opacity="0.9"><circle cx="70" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(70,236) scale(0.8) translate(-70,-236)"><path d="M63 233.5 L67 233.5 L75 229 L75 243 L67 238.5 L63 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M77 231 C80 233,80 239,77 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+        <!-- Pre-orders: coin x=165 -->
+        <g opacity="0.9"><circle cx="165" cy="236" r="12" fill="rgba(192,120,0,0.12)" stroke="rgba(192,120,0,0.35)" stroke-width="1"/><text x="165" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="15" font-weight="400">♥</text></g>
+        <!-- Listening events: megaphone x=255 -->
+        <g opacity="0.9"><circle cx="255" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(255,236) scale(0.8) translate(-255,-236)"><path d="M248 233.5 L252 233.5 L260 229 L260 243 L252 238.5 L248 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M262 231 C265 233,265 239,262 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+        <!-- Gamified boosts: gamepad x=355 -->
+        <g opacity="0.9"><circle cx="355" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(355,236) scale(0.8) translate(-355,-236)"><rect x="346" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M350 234v4M348 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="359" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="362" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+        <!-- Fan trends: megaphone x=460 -->
+        <g opacity="0.9"><circle cx="460" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(460,236) scale(0.8) translate(-460,-236)"><path d="M453 233.5 L457 233.5 L465 229 L465 243 L457 238.5 L453 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M467 231 C470 233,470 239,467 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+        <!-- Gamified comps: gamepad x=560 -->
+        <g opacity="0.9"><circle cx="560" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(560,236) scale(0.8) translate(-560,-236)"><rect x="551" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.3" fill="none"/><path d="M555 234v4M553 236h4" stroke="#CC2BFB" stroke-width="1.3" stroke-linecap="round"/><circle cx="564" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="567" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+        <!-- Ticket comp: coin x=695 -->
+        <g opacity="0.9"><circle cx="695" cy="236" r="12" fill="rgba(192,120,0,0.12)" stroke="rgba(192,120,0,0.35)" stroke-width="1"/><text x="695" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="15" font-weight="400">♥</text></g>
+        <!-- VIP upgrades: coin x=790 -->
+        <g opacity="0.9"><circle cx="790" cy="236" r="12" fill="rgba(192,120,0,0.12)" stroke="rgba(192,120,0,0.35)" stroke-width="1"/><text x="790" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="15" font-weight="400">♥</text></g>
+        <!-- Live voting: gamepad x=910 -->
+        <g opacity="0.9"><circle cx="910" cy="236" r="12" fill="rgba(204,43,251,0.12)" stroke="rgba(204,43,251,0.35)" stroke-width="1"/><g transform="translate(910,236) scale(0.8) translate(-910,-236)"><rect x="901" y="230" width="18" height="12" rx="3" stroke="#CC2BFB" stroke-width="1.4" fill="none"/><path d="M905 234v4M903 236h4" stroke="#CC2BFB" stroke-width="1.4" stroke-linecap="round"/><circle cx="914" cy="234" r="1.2" fill="#CC2BFB"/><circle cx="917" cy="236" r="1.2" fill="#CC2BFB"/></g></g>
+        <!-- BTS updates: megaphone x=990 -->
+        <g opacity="0.9"><circle cx="990" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(990,236) scale(0.8) translate(-990,-236)"><path d="M983 233.5 L987 233.5 L995 229 L995 243 L987 238.5 L983 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M997 231 C1000 233,1000 239,997 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+        <!-- Merch: coin x=1105 -->
+        <g opacity="0.9"><circle cx="1105" cy="236" r="12" fill="rgba(192,120,0,0.12)" stroke="rgba(192,120,0,0.35)" stroke-width="1"/><text x="1105" y="236" text-anchor="middle" dominant-baseline="central" fill="#e8a020" font-family="Arial,sans-serif" font-size="15" font-weight="400">♥</text></g>
+        <!-- Next-city: megaphone x=1220 -->
+        <g opacity="0.9"><circle cx="1220" cy="236" r="12" fill="rgba(32,212,184,0.12)" stroke="rgba(32,212,184,0.4)" stroke-width="1"/><g transform="translate(1220,236) scale(0.8) translate(-1220,-236)"><path d="M1213 233.5 L1217 233.5 L1225 229 L1225 243 L1217 238.5 L1213 238.5 Z" stroke="#20D4B8" stroke-width="1.4" fill="none" stroke-linejoin="round"/><path d="M1227 231 C1230 233,1230 239,1227 241" stroke="#20D4B8" stroke-width="1.3" fill="none" stroke-linecap="round"/></g></g>
+
+        <!-- Labels (y=260, 274) -->
+        <text x="70" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Eiffel teaser" data-fr="Teaser">Eiffel teaser</text>
+        <text x="165" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Lottery opens" data-fr="Billetterie ouverte">Lottery opens</text>
+        <text x="255" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Devotion" data-fr="Quiz de">Devotion</text>
+        <text x="255" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="quiz" data-fr="dévouement">quiz</text>
+        <text x="355" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="9M fans" data-fr="9M fans">Room for 9M</text>
+        <text x="355" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="registered" data-fr="inscrits">registered</text>
+        <text x="460" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Leaderboard" data-fr="Classement">Leaderboard</text>
+        <text x="560" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Priority" data-fr="Accès">Priority</text>
+        <text x="560" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="access" data-fr="prioritaire">access</text>
+        <text x="695" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Opening" data-fr="Soir">Opening</text>
+        <text x="695" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="night" data-fr="d'ouverture">night</text>
+        <text x="790" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Treasure" data-fr="Chasse au">Treasure</text>
+        <text x="790" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="hunt" data-fr="trésor">hunt</text>
+        <text x="910" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Live" data-fr="Vote">Live</text>
+        <text x="910" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="votes" data-fr="en direct">votes</text>
+        <text x="990" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Backstage" data-fr="Contenus">Backstage</text>
+        <text x="990" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="drops" data-fr="exclusifs">drops</text>
+        <text x="1105" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Final encore" data-fr="Dernier rappel">Final encore</text>
+        <text x="1220" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="Monthly" data-fr="Drops">Monthly</text>
+        <text x="1220" y="277" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="11" data-en="drops" data-fr="mensuels">drops</text>
+        </g>
+
+        <!-- PHASE LABELS — arrow badges -->
+        <g transform="translate(0,24)">
+        <!-- Release track — gaps between arrows only -->
+        <line x1="153" y1="300" x2="177" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <line x1="406" y1="300" x2="430" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="165" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+        <circle cx="418" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+        <path d="M28,288 L144,288 L153,300 L144,312 L28,312 Q24,312,24,308 L24,292 Q24,288,28,288 Z" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <text x="84" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="12" data-en="Before" data-fr="Avant">Before</text>
+        <path d="M181,288 L397,288 L406,300 L397,312 L181,312 Q177,312,177,308 L177,292 Q177,288,181,288 Z" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+        <text x="289" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12" data-en="During" data-fr="Pendant">During</text>
+        <path d="M434,288 L605,288 L614,300 L605,312 L434,312 Q430,312,430,308 L430,292 Q430,288,434,288 Z" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <text x="522" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="12" data-en="After" data-fr="Après">After</text>
+
+        <!-- Connector between Release and Tour tracks -->
+        <line x1="614" y1="300" x2="640" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="627" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+
+        <!-- Tour track — gaps between arrows only -->
+        <line x1="796" y1="300" x2="820" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <line x1="1008" y1="300" x2="1032" y2="300" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="808" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+        <circle cx="1020" cy="300" r="2.5" fill="rgba(255,255,255,0.25)"/>
+        <path d="M644,288 L787,288 L796,300 L787,312 L644,312 Q640,312,640,308 L640,292 Q640,288,644,288 Z" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <text x="718" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="12" data-en="Before" data-fr="Avant">Before</text>
+        <path d="M824,288 L999,288 L1008,300 L999,312 L824,312 Q820,312,820,308 L820,292 Q820,288,824,288 Z" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+        <text x="914" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12" data-en="During" data-fr="Pendant">During</text>
+        <path d="M1036,288 L1311,288 L1320,300 L1311,312 L1036,312 Q1032,312,1032,308 L1032,292 Q1032,288,1036,288 Z" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.18)" stroke-width="0.8"/>
+        <text x="1176" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="12" data-en="After" data-fr="Après">After</text>
+
+        <!-- Legend -->
+        <line id="leg-line-magic" x1="1191" y1="343" x2="1223" y2="343" stroke="#20D4B8" stroke-width="2.5"/>
+        <text id="leg-text-magic" x="1328" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12" data-en="Fans reached with Magic" data-fr="Fans touchés avec Magic">Fans welcomed in Magic</text>
+        <line id="leg-line-trad" x1="1191" y1="358" x2="1223" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
+        <text id="leg-text-trad" x="1328" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic" data-en="Fans in the venue" data-fr="Fans dans la salle">Fans in the venue</text>
         </g>
       </svg>
     </div>
