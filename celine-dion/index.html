@@ -1581,11 +1581,12 @@ body.present-mode #present-arrows { display:flex !important; }
 
     <!-- Hero media — full bleed right, fade left -->
     <div id="s1-hero-media" style="position:absolute;top:0;right:0;bottom:0;width:55%;overflow:hidden;">
-      <video id="s1-video" autoplay loop muted playsinline webkit-playsinline preload="auto" disablePictureInPicture style="width:100%;height:100%;object-fit:cover;object-position:center 45%;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 88%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 88%,transparent 100%);">
+      <video id="s1-video" autoplay loop muted playsinline webkit-playsinline preload="auto" disablePictureInPicture style="width:100%;height:100%;object-fit:cover;object-position:center 45%;transform:translateX(6%);-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);">
         <source src="Assets/welcome-celine.mov" type="video/mp4">
       </video>
-      <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(31,120,255,0.45);mix-blend-mode:color;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 88%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 88%,transparent 100%);"></div>
-      <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.5) 30%,rgba(13,27,66,0.2) 45%,transparent 60%);pointer-events:none;"></div>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:rgba(31,120,255,0.45);mix-blend-mode:color;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.85) 45%,black 60%,black 78%,transparent 90%);"></div>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to right,#0D1B42 0%,rgba(13,27,66,0.85) 15%,rgba(13,27,66,0.5) 30%,rgba(13,27,66,0.2) 45%,transparent 60%,transparent 75%,rgba(13,27,66,0.95) 100%);pointer-events:none;"></div>
+      <div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(ellipse 55% 100% at 100% 50%, rgba(13,27,66,0.75) 0%, rgba(13,27,66,0.25) 45%, transparent 75%);pointer-events:none;"></div>
     </div>
   </div>
 </div>
@@ -1711,9 +1712,9 @@ body.present-mode #present-arrows { display:flex !important; }
           stroke="rgba(255,255,255,0.32)" stroke-width="1.6" fill="none"/>
 
         <!-- FANS WELCOMED IN MAGIC — ramps up before, peaks during, tapers after -->
-        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 600 48, 690 36, 745 34 C 820 42, 900 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140 L 1320 210 L 20 210 Z"
+        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 620 50, 720 36, 780 34 C 840 42, 920 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140 L 1320 210 L 20 210 Z"
           fill="url(#tlf)" opacity="0.55"/>
-        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 600 48, 690 36, 745 34 C 820 42, 900 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140"
+        <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 620 50, 720 36, 780 34 C 840 42, 920 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140"
           stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
 
         <!-- Inline scale labels -->
@@ -1722,14 +1723,14 @@ body.present-mode #present-arrows { display:flex !important; }
 
         <!-- Tick connectors from dots to icons (dashed, phase-colored) -->
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
-          <line x1="100" y1="183" x2="100" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="195" y1="178" x2="195" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="285" y1="164" x2="285" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="370" y1="144" x2="370" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="125" y1="183" x2="125" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="225" y1="178" x2="225" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="325" y1="164" x2="325" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="600" y1="62" x2="600" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="510" y1="76" x2="510" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="640" y1="52" x2="640" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="745" y1="40" x2="745" y2="231" stroke="rgba(140,60,255,0.45)"/>
-          <line x1="850" y1="50" x2="850" y2="232" stroke="rgba(140,60,255,0.35)"/>
+          <line x1="690" y1="49" x2="690" y2="232" stroke="rgba(140,60,255,0.35)"/>
+          <line x1="780" y1="38" x2="780" y2="231" stroke="rgba(140,60,255,0.45)"/>
+          <line x1="870" y1="51" x2="870" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="960" y1="66" x2="960" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="1085" y1="96" x2="1085" y2="232" stroke="rgba(32,212,184,0.35)"/>
           <line x1="1180" y1="119" x2="1180" y2="232" stroke="rgba(32,212,184,0.35)"/>
@@ -1737,14 +1738,14 @@ body.present-mode #present-arrows { display:flex !important; }
         </g>
 
         <!-- Dots on Magic line -->
-        <circle cx="100" cy="179" r="4.5" fill="#1FCEFF"/><!-- Leaderboard -->
-        <circle cx="195" cy="174" r="5.5" fill="#1FCEFF"/><!-- Devotion leaderboard (anchor) -->
-        <circle cx="285" cy="160" r="4.5" fill="#1FCEFF"/><!-- Watch party -->
-        <circle cx="370" cy="140" r="4.5" fill="#1FCEFF"/><!-- Exclusive drops -->
+        <circle cx="125" cy="179" r="4.5" fill="#1FCEFF"/><!-- Leaderboard -->
+        <circle cx="225" cy="174" r="5.5" fill="#1FCEFF"/><!-- Devotion leaderboard (anchor) -->
+        <circle cx="325" cy="160" r="4.5" fill="#1FCEFF"/><!-- Watch party -->
+        <circle cx="600" cy="58" r="4.5" fill="#8C3CFF"/><!-- Exclusive drops (now During) -->
         <circle cx="510" cy="72" r="5" fill="#8C3CFF"/><!-- Opening night -->
-        <circle cx="640" cy="48" r="5.5" fill="#8C3CFF"/><!-- Paris treasure hunt (anchor) -->
-        <circle cx="745" cy="34" r="6" fill="#8C3CFF"/><!-- Treasure hunt (peak) -->
-        <circle cx="850" cy="46" r="5" fill="#8C3CFF"/><!-- Live votes -->
+        <circle cx="690" cy="45" r="5.5" fill="#8C3CFF"/><!-- Paris treasure hunt (anchor) -->
+        <circle cx="780" cy="34" r="6" fill="#8C3CFF"/><!-- Treasure hunt (peak) -->
+        <circle cx="870" cy="47" r="5" fill="#8C3CFF"/><!-- Live votes -->
         <circle cx="960" cy="62" r="5" fill="#8C3CFF"/><!-- Backstage drops -->
         <circle cx="1085" cy="92" r="5.5" fill="#20D4B8"/><!-- Monthly drops (anchor) -->
         <circle cx="1180" cy="115" r="4.5" fill="#20D4B8"/><!-- Surprise drops -->
@@ -1753,15 +1754,15 @@ body.present-mode #present-arrows { display:flex !important; }
         <!-- ICONS row -->
         <g transform="translate(0,10)">
         <!-- Before (amber) — Ticket lottery ✦ / Memory wall ♥ / Throwback night ▶ / Exclusive drops ✦ -->
-        <g><circle cx="100" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="100" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
-        <g><circle cx="195" cy="236" r="13" fill="rgba(31,206,255,0.18)" stroke="rgba(31,206,255,0.55)" stroke-width="1"/><text x="195" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="15" font-weight="700">♥</text></g>
-        <g><circle cx="285" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="287" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="370" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="370" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
+        <g><circle cx="125" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="125" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
+        <g><circle cx="225" cy="236" r="13" fill="rgba(31,206,255,0.18)" stroke="rgba(31,206,255,0.55)" stroke-width="1"/><text x="225" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="15" font-weight="700">♥</text></g>
+        <g><circle cx="325" cy="236" r="12" fill="rgba(31,206,255,0.14)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/><text x="287" y="236" text-anchor="middle" dominant-baseline="central" fill="#1FCEFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
+        <g><circle cx="600" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="600" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
         <!-- During (magenta) — Opening night ▶ / Watch party ▶ / Song dedication ♥ (peak) / Live votes ✦ / Backstage drops ✦ -->
         <g><circle cx="510" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="512" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
-        <g><circle cx="640" cy="236" r="13" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="640" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
-        <g><circle cx="745" cy="236" r="14" fill="rgba(140,60,255,0.22)" stroke="rgba(140,60,255,0.65)" stroke-width="1.2"/><text x="745" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="16" font-weight="700">♥</text></g>
-        <g><circle cx="850" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="852" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
+        <g><circle cx="690" cy="236" r="13" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="690" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
+        <g><circle cx="780" cy="236" r="14" fill="rgba(140,60,255,0.22)" stroke="rgba(140,60,255,0.65)" stroke-width="1.2"/><text x="780" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="16" font-weight="700">♥</text></g>
+        <g><circle cx="870" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="872" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
         <g><circle cx="960" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="960" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
         <!-- After (teal) — Monthly highlights ✦ / Concert film ▶ / Fan reunion ♥ -->
         <g><circle cx="1085" cy="236" r="13" fill="rgba(32,212,184,0.18)" stroke="rgba(32,212,184,0.55)" stroke-width="1"/><text x="1085" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
@@ -1769,29 +1770,30 @@ body.present-mode #present-arrows { display:flex !important; }
         <g><circle cx="1270" cy="236" r="12" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1"/><text x="1270" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">♥</text></g>
 
         <!-- Moment labels -->
-        <text x="100" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Ticket" data-fr="Loterie">Ticket</text>
-        <text x="100" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="lottery" data-fr="billet">lottery</text>
-        <text x="195" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Devotion" data-fr="Classement">Devotion</text>
-        <text x="195" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="leaderboard" data-fr="dévotion">leaderboard</text>
-        <text x="285" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Throwback" data-fr="Soirée">Throwback</text>
-        <text x="285" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="night" data-fr="rétro">night</text>
-        <text x="370" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Exclusive" data-fr="Contenu">Exclusive</text>
-        <text x="370" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusif">drops</text>
+        <text x="125" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Ticket" data-fr="Loterie">Ticket</text>
+        <text x="125" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="lottery" data-fr="billet">lottery</text>
+        <text x="225" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Devotion" data-fr="Classement">Devotion</text>
+        <text x="225" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Leaderboard" data-fr="dévotion">Leaderboard</text>
+        <text x="325" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Throwback" data-fr="Soirée">Throwback</text>
+        <text x="325" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="night" data-fr="rétro">night</text>
+        <text x="600" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Exclusive" data-fr="Contenu">Exclusive</text>
+        <text x="600" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusif">drops</text>
         <text x="510" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Pre-show" data-fr="Pré-show">Pre-show</text>
-        <text x="510" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="stream" data-fr="live">stream</text>
-        <text x="640" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Paris" data-fr="Chasse au">Paris</text>
-        <text x="640" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="treasure hunt" data-fr="trésor">treasure hunt</text>
-        <text x="745" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Live" data-fr="Vote">Live</text>
-        <text x="745" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="vote" data-fr="encore">vote</text>
-        <text x="850" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Watch" data-fr="Watch">Watch</text>
-        <text x="850" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="party" data-fr="party">party</text>
+        <text x="510" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="countdown" data-fr="décompte">countdown</text>
+        <text x="690" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Paris" data-fr="Chasse au">Paris</text>
+        <text x="690" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Treasure Hunt" data-fr="trésor">Treasure Hunt</text>
+        <text x="780" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Live" data-fr="Vote">Live</text>
+        <text x="780" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Vote" data-fr="encore">Vote</text>
+        <text x="870" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Watch" data-fr="Watch">Watch</text>
+        <text x="870" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="party" data-fr="party">party</text>
         <text x="960" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Backstage" data-fr="Coulisses">Backstage</text>
         <text x="960" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusives">drops</text>
         <text x="1085" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Monthly" data-fr="Drops">Monthly</text>
-        <text x="1085" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="mensuels">drops</text>
+        <text x="1085" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Drops" data-fr="mensuels">Drops</text>
         <text x="1180" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Concert" data-fr="Film du">Concert</text>
         <text x="1180" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="film" data-fr="concert">film</text>
-        <text x="1270" y="270" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan reunion" data-fr="Retrouvailles">Fan reunion</text>
+        <text x="1270" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Retrou-">Fan</text>
+        <text x="1270" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="reunion" data-fr="vailles">reunion</text>
         </g>
 
         <!-- Legend (right-anchored block; line travels with text via x-anchored group) -->
@@ -1913,8 +1915,8 @@ body.present-mode #present-arrows { display:flex !important; }
         <div class="ss-star" style="width:3px;height:3px;top:50%;left:calc(50% - 265px);transform:translate(-50%,-50%);opacity:.65;"></div>
 
         <div class="ss-sun">
-          <span style="font-family:'Gilroy',sans-serif;font-weight:400;font-size:10px;color:rgba(40,40,40,0.45);letter-spacing:0.12em;" data-en="CÉLINE" data-fr="CÉLINE">CÉLINE</span>
-          <span style="font-family:'Gilroy',sans-serif;font-weight:500;font-size:13px;color:rgba(40,40,40,0.7);letter-spacing:0.08em;" data-en="DION" data-fr="DION">DION</span>
+          <span style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:13px;color:rgba(40,40,40,0.8);letter-spacing:0.08em;" data-en="CÉLINE" data-fr="CÉLINE">CÉLINE</span>
+          <span style="font-family:'Gilroy',sans-serif;font-weight:400;font-size:10px;color:rgba(40,40,40,0.5);letter-spacing:0.12em;" data-en="DION" data-fr="DION">DION</span>
         </div>
 
         <div class="r1" style="--spd:20s;--s:0deg;">
@@ -2080,8 +2082,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Keep <span class='gt'>rewarding them</span>" data-fr-html="Continuez à <span class='gt'>les récompenser</span>">
         Keep <span class="gt">rewarding them</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:780px;" data-en="Here's what it looks like. Four core experiences inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day." data-fr="Voici ce que ça donne. Quatre expériences au cœur du Fanverse — chat, quêtes, collectibles, drops — gardent Céline et ses fans proches chaque jour.">
-        Here's what it looks like. Four core experiences inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day.
+      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:780px;" data-en="Here's what it looks like. Four core product features inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day." data-fr="Voici ce que ça donne. Quatre expériences au cœur du Fanverse — chat, quêtes, collectibles, drops — gardent Céline et ses fans proches chaque jour.">
+        Here's what it looks like. Four core product features inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day.
       </p>
     </div>
     <!-- 4 feature panels -->
@@ -2146,8 +2148,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;" data-i18n="html" data-en-html="Made unique to <span class='gt'>Céline</span>" data-fr-html="Pensé pour <span class='gt'>Céline</span>">
         Made unique to <span class="gt">Céline</span>
       </div>
-      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:720px;" data-en="See our experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore." data-fr="Découvrez nos expériences taillées pour Céline. Quatre pensées pour Paris 2026, du premier test de dévouement aux mois qui suivent le dernier rappel.">
-        See our experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore.
+      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:720px;" data-en="See a library of experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore." data-fr="Découvrez une bibliothèque d'expériences taillées pour Céline. Quatre pensées pour Paris 2026, du premier test de dévouement aux mois qui suivent le dernier rappel.">
+        See a library of experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore.
       </p>
     </div>
 
@@ -2236,7 +2238,7 @@ body.present-mode #present-arrows { display:flex !important; }
         </div>
         <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);">
           <div style="width:8px;height:8px;border-radius:50%;background:#00D4A0;flex-shrink:0;"></div>
-          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Fan Memories</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: every concert and milestone, remembered</span>" data-fr-html="<span style='font-weight:700;'>Souvenirs de fans</span><span style='font-weight:300;color:var(--muted);'> : chaque concert et chaque moment, gardés en mémoire</span>"><span style="font-weight:700;">Fan Memories</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: every concert and milestone, remembered</span></div>
+          <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Fan Moments</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: every concert and milestone, tracked</span>" data-fr-html="<span style='font-weight:700;'>Moments fans</span><span style='font-weight:300;color:var(--muted);'> : chaque concert et chaque moment, suivis</span>"><span style="font-weight:700;">Fan Moments</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: every concert and milestone, tracked</span></div>
         </div>
       </div>
     </div>
@@ -2266,13 +2268,13 @@ body.present-mode #present-arrows { display:flex !important; }
   <div style="position:absolute;inset:0;display:flex;align-items:center;padding:80px 80px 80px 100px;gap:60px;">
     <!-- Left: Text -->
     <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
-      <span class="tag" data-en="And the heart goes on" data-fr="Et le cœur survivra">And the heart goes on</span>
+      <span class="tag" data-en="And the heart goes on" data-fr="And the heart goes on">And the heart goes on</span>
       <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="They show up for you.<br><span class='gt'>Now show up for them.</span>" data-fr-html="Ils sont là pour vous.<br><span class='gt'>À vous de leur rendre.</span>">
         They show up for you.<br><span class="gt">Now show up for them.</span>
       </div>
       <div style="width:52px;height:3px;background:var(--gp);border-radius:2px;"></div>
-      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:560px;" data-en="Your Fanverse is built for the top percent of your fanbase, the ones who stream every track, show up to every show, and never miss a drop. With Magic, their loyalty finally means something." data-fr="Votre Fanverse est conçu pour le top de votre base fan, ceux qui écoutent chaque titre, viennent à chaque concert et ne ratent jamais rien. Avec Magic, leur fidélité prend enfin tout son sens.">
-        Your Fanverse is built for the top percent of your fanbase, the ones who stream every track, show up to every show, and never miss a drop. With Magic, their loyalty finally means something.
+      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:560px;" data-en="A Fanverse is built for the top percent of your fanbase: the ones who stream every track, show up to every show, and never miss a drop. Ticket in hand or not, Magic makes their loyalty finally mean something." data-fr="Une Fanverse est conçue pour le top de votre base fan : ceux qui écoutent chaque titre, viennent à chaque concert et ne ratent jamais rien. Billet en main ou non, Magic donne enfin du sens à leur fidélité.">
+        A Fanverse is built for the top percent of your fanbase: the ones who stream every track, show up to every show, and never miss a drop. Ticket in hand or not, Magic makes their loyalty finally mean something.
       </p>
       <p style="font-size:22px;font-weight:700;letter-spacing:0.03em;" data-i18n="html" data-en-html="This is your Fanverse. <span style='color:#fff'>They've earned it.</span>" data-fr-html="Voici votre Fanverse. <span style='color:#fff'>Ils l'ont mérité.</span>">This is your Fanverse. <span style="color:#fff">They've earned it.</span></p>
     </div>
@@ -2360,7 +2362,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <div style="width:46px;height:46px;border-radius:12px;background:rgba(140,60,255,0.15);border:1px solid rgba(140,60,255,0.32);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(140,60,255,0.15);flex-shrink:0;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="10" y="7" width="4" height="14" rx="1.5" fill="rgba(220,100,255,0.9)"/><rect x="17" y="3" width="4" height="18" rx="1.5" fill="rgba(220,100,255,0.9)"/></svg>
         </div>
-        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every moment shared</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: from pre-show anticipation to the final encore and the months after, fans live every beat alongside Céline.</span>" data-fr-html="<span style='font-weight:700;'>Chaque moment partagé</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : de l'anticipation avant les concerts au dernier rappel et aux mois qui suivent, les fans vivent chaque instant avec Céline.</span>"><span style="font-weight:700;">Every moment shared</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: from pre-show anticipation to the final encore and the months after, fans live every beat alongside Céline.</span></div>
+        <div style="font-size:16px;line-height:1.5;" data-i18n="html" data-en-html="<span style='font-weight:700;'>Every moment shared</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'>: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside Céline, ticket or not.</span>" data-fr-html="<span style='font-weight:700;'>Chaque moment partagé</span><span style='font-weight:300;color:rgba(255,255,255,0.55);'> : de l'anticipation avant les concerts au dernier rappel et aux mois qui suivent, chaque fan vit chaque instant avec Céline, billet ou non.</span>"><span style="font-weight:700;">Every moment shared</span><span style="font-weight:300;color:rgba(255,255,255,0.55);">: from pre-show anticipation to the final encore and the months after, every fan lives every beat alongside Céline, ticket or not.</span></div>
       </div>
       <div style="display:flex;align-items:center;gap:16px;padding:18px 24px;border-radius:14px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);text-align:left;">
         <div style="width:46px;height:46px;border-radius:12px;background:rgba(0,130,255,0.15);border:1px solid rgba(0,130,255,0.3);display:flex;align-items:center;justify-content:center;box-shadow:0 0 16px rgba(0,130,255,0.12);flex-shrink:0;">
