@@ -3421,12 +3421,14 @@ function setLang(lang) {
   repositionLegendLines();
   // Update revenue simulator dynamic labels
   try { recalculate(); } catch(e) {}
-  // Persist in URL
-  var url = new URL(window.location.href);
-  if (lang === 'fr') { url.searchParams.set('lang', 'fr'); }
-  else if (clientMode) { url.searchParams.set('lang', 'en'); }
-  else { url.searchParams.delete('lang'); }
-  window.history.replaceState({}, '', url.toString());
+  // Persist in URL — only when already in client mode (preserves shareable client URLs).
+  // In internal/presentation mode, never write ?lang= so the URL stays clean and reloads
+  // keep the editor view.
+  if (clientMode) {
+    var url = new URL(window.location.href);
+    url.searchParams.set('lang', lang === 'fr' ? 'fr' : 'en');
+    window.history.replaceState({}, '', url.toString());
+  }
 }
 
 // PDF Export
