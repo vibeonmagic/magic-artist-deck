@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Magic — Artist Deck</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1303,6 +1303,9 @@ body.scroll-mode #present-arrows { display:none !important; }
 body.scroll-mode #mobile-fs-exit { display:none !important; }
 body.scroll-mode #fs-toast { display:none !important; }
 body.scroll-mode #progress { display:none !important; }
+@media screen and (max-width: 768px) {
+  .body-shrink-mobile { font-size:14px !important; line-height:1.55 !important; }
+}
 
 /* Client mode on desktop — constrain width, center slides */
 body.scroll-mode.client-mode .slide {
@@ -1607,7 +1610,7 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;" spellcheck="false" data-i18n="html" data-en-html="9 million hearts.<br><span class='gt'>480,000 seats.</span>" data-fr-html="9 millions de cœurs.<br><span class='gt'>480 000 sièges.</span>">
         9 million hearts.<br><span class="gt">480,000 seats.</span>
       </div>
-      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);" data-i18n="html" data-en-html="Céline's return to Paris drew 9 million fans to the ticket lottery. 480,000 will be in the room across 16 nights.<br>8.5 million couldn't secure a ticket, but their devotion is just as real." data-fr-html="Le retour de Céline à Paris a rassemblé 9 millions de fans autour de la billetterie. 480 000 seront dans la salle sur 16 soirs.<br>8,5 millions n'ont pas pu obtenir de place, mais leur dévouement est tout aussi réel.">Céline's return to Paris drew 9 million fans to the ticket lottery. 480,000 will be in the room across 16 nights.<br>8.5 million couldn't secure a ticket, but their devotion is just as real.</p>
+      <p class="body-shrink-mobile" style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);" data-i18n="html" data-en-html="Céline's return to Paris drew 9 million fans to the ticket lottery. 480,000 will be in the room across 16 nights.<br>8.5 million couldn't secure a ticket, but their devotion is just as real." data-fr-html="Le retour de Céline à Paris a rassemblé 9 millions de fans autour de la billetterie. 480 000 seront dans la salle sur 16 soirs.<br>8,5 millions n'ont pas pu obtenir de place, mais leur dévouement est tout aussi réel.">Céline's return to Paris drew 9 million fans to the ticket lottery. 480,000 will be in the room across 16 nights.<br>8.5 million couldn't secure a ticket, but their devotion is just as real.</p>
     </div>
 
     <div style="display:flex;align-items:stretch;gap:60px;padding-top:36px;">
@@ -1679,12 +1682,12 @@ body.present-mode #present-arrows { display:flex !important; }
 
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 40px;">
     <div style="flex-shrink:0;margin-bottom:18px;">
-      <span class="tag" data-en="For every fan" data-fr="Pour chaque fan">For every fan</span>
+      <span class="tag" data-en="A place for 9M" data-fr="Une place pour 9M">A place for 9M</span>
       <div style="margin-top:14px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.02em;" data-i18n="html" data-en-html="Every fan has <span class='gt'>a place</span>" data-fr-html="Chaque fan a <span class='gt'>sa place</span>">
         Every fan has <span class="gt">a place</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:960px;" data-en="A ticket isn't the only way in. Magic brings every fan into every moment of Paris 2026 through a unique set of fan experiences, in the room or not, before, during, and after." data-fr="Un billet n'est pas la seule façon d'en être. Magic fait vivre chaque instant de Paris 2026 à chaque fan à travers un ensemble unique d'expériences fans, dans la salle ou non, avant, pendant et après.">
-        A ticket isn't the only way in. Magic brings every fan into every moment of Paris 2026 through a unique set of fan experiences, in the room or not, before, during, and after.
+      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:960px;" data-en="480K tickets. 9M fans. Magic turns that frustration into a stage every fan can stand on, ticket or not." data-fr="480K billets. 9M de fans. Magic transforme cette frustration en une scène où chaque fan a sa place, billet ou pas.">
+        480K tickets. 9M fans. Magic turns that frustration into a stage every fan can stand on, ticket or not.
       </p>
     </div>
     <!-- Timeline: single track, Before / During / After the concerts -->
@@ -1718,17 +1721,17 @@ body.present-mode #present-arrows { display:flex !important; }
           stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
 
         <!-- Inline scale labels -->
-        <text x="745" y="22" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="12" font-weight="800" fill="#1FCEFF" letter-spacing="0.04em" data-en="Room for 8.5M more" data-fr="De la place pour 8,5M de plus">Room for 8.5M more</text>
-        <text x="735" y="162" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.55)" letter-spacing="0.04em" data-en="480K inside the concerts" data-fr="480K dans la salle">480K inside the concerts</text>
+        <text x="780" y="20" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="12" font-weight="800" fill="#1FCEFF" letter-spacing="0.04em" data-en="Room for 8.5M more" data-fr="De la place pour 8,5M de plus">Room for 8.5M more</text>
+        <text x="780" y="162" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.55)" letter-spacing="0.04em" data-en="480K inside the concerts" data-fr="480K dans la salle">480K inside the concerts</text>
 
         <!-- Tick connectors from dots to icons (dashed, phase-colored) -->
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
-          <line x1="125" y1="183" x2="125" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="225" y1="178" x2="225" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="325" y1="164" x2="325" y2="232" stroke="rgba(31,206,255,0.35)"/>
-          <line x1="600" y1="62" x2="600" y2="232" stroke="rgba(140,60,255,0.35)"/>
+          <line x1="125" y1="180" x2="125" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="225" y1="172" x2="225" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="325" y1="156" x2="325" y2="232" stroke="rgba(31,206,255,0.35)"/>
+          <line x1="600" y1="59" x2="600" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="510" y1="76" x2="510" y2="232" stroke="rgba(140,60,255,0.35)"/>
-          <line x1="690" y1="49" x2="690" y2="232" stroke="rgba(140,60,255,0.35)"/>
+          <line x1="690" y1="46" x2="690" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="780" y1="38" x2="780" y2="231" stroke="rgba(140,60,255,0.45)"/>
           <line x1="870" y1="51" x2="870" y2="232" stroke="rgba(140,60,255,0.35)"/>
           <line x1="960" y1="66" x2="960" y2="232" stroke="rgba(140,60,255,0.35)"/>
@@ -1738,13 +1741,13 @@ body.present-mode #present-arrows { display:flex !important; }
         </g>
 
         <!-- Dots on Magic line -->
-        <circle cx="125" cy="179" r="4.5" fill="#1FCEFF"/><!-- Leaderboard -->
-        <circle cx="225" cy="174" r="5.5" fill="#1FCEFF"/><!-- Devotion leaderboard (anchor) -->
-        <circle cx="325" cy="160" r="4.5" fill="#1FCEFF"/><!-- Watch party -->
-        <circle cx="600" cy="58" r="4.5" fill="#8C3CFF"/><!-- Exclusive drops (now During) -->
+        <circle cx="125" cy="177" r="4.5" fill="#1FCEFF"/><!-- Leaderboard -->
+        <circle cx="225" cy="168" r="5.5" fill="#1FCEFF"/><!-- Devotion leaderboard (anchor) -->
+        <circle cx="325" cy="152" r="4.5" fill="#1FCEFF"/><!-- Watch party -->
+        <circle cx="600" cy="55" r="4.5" fill="#8C3CFF"/><!-- Exclusive drops (now During) -->
         <circle cx="510" cy="72" r="5" fill="#8C3CFF"/><!-- Opening night -->
-        <circle cx="690" cy="45" r="5.5" fill="#8C3CFF"/><!-- Paris treasure hunt (anchor) -->
-        <circle cx="780" cy="34" r="6" fill="#8C3CFF"/><!-- Treasure hunt (peak) -->
+        <circle cx="690" cy="42" r="5.5" fill="#8C3CFF"/><!-- Paris treasure hunt (anchor) -->
+        <circle cx="780" cy="34" r="5.5" fill="#8C3CFF"/><!-- Treasure hunt (peak) -->
         <circle cx="870" cy="47" r="5" fill="#8C3CFF"/><!-- Live votes -->
         <circle cx="960" cy="62" r="5" fill="#8C3CFF"/><!-- Backstage drops -->
         <circle cx="1085" cy="92" r="5.5" fill="#20D4B8"/><!-- Monthly drops (anchor) -->
@@ -1761,7 +1764,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <!-- During (magenta) — Opening night ▶ / Watch party ▶ / Song dedication ♥ (peak) / Live votes ✦ / Backstage drops ✦ -->
         <g><circle cx="510" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="512" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
         <g><circle cx="690" cy="236" r="13" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="690" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">✦</text></g>
-        <g><circle cx="780" cy="236" r="14" fill="rgba(140,60,255,0.22)" stroke="rgba(140,60,255,0.65)" stroke-width="1.2"/><text x="780" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="16" font-weight="700">♥</text></g>
+        <g><circle cx="780" cy="236" r="12" fill="rgba(140,60,255,0.18)" stroke="rgba(140,60,255,0.55)" stroke-width="1"/><text x="780" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">♥</text></g>
         <g><circle cx="870" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="872" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="12" font-weight="700">▶</text></g>
         <g><circle cx="960" cy="236" r="12" fill="rgba(140,60,255,0.14)" stroke="rgba(140,60,255,0.45)" stroke-width="1"/><text x="960" y="236" text-anchor="middle" dominant-baseline="central" fill="#8C3CFF" font-family="Gilroy,Arial,sans-serif" font-size="13" font-weight="700">✦</text></g>
         <!-- After (teal) — Monthly highlights ✦ / Concert film ▶ / Fan reunion ♥ -->
@@ -1770,28 +1773,28 @@ body.present-mode #present-arrows { display:flex !important; }
         <g><circle cx="1270" cy="236" r="12" fill="rgba(32,212,184,0.14)" stroke="rgba(32,212,184,0.45)" stroke-width="1"/><text x="1270" y="236" text-anchor="middle" dominant-baseline="central" fill="#20D4B8" font-family="Gilroy,Arial,sans-serif" font-size="14" font-weight="700">♥</text></g>
 
         <!-- Moment labels -->
-        <text x="125" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Ticket" data-fr="Loterie">Ticket</text>
-        <text x="125" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="lottery" data-fr="billet">lottery</text>
-        <text x="225" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Devotion" data-fr="Classement">Devotion</text>
-        <text x="225" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Leaderboard" data-fr="dévotion">Leaderboard</text>
-        <text x="325" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Throwback" data-fr="Soirée">Throwback</text>
-        <text x="325" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="night" data-fr="rétro">night</text>
+        <text x="125" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Fan">Fan</text>
+        <text x="125" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="quest" data-fr="quest">quest</text>
+        <text x="225" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Fan">Fan</text>
+        <text x="225" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="quiz" data-fr="quiz">quiz</text>
+        <text x="325" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Best" data-fr="Meilleures">Best</text>
+        <text x="325" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="playlists" data-fr="playlists">playlists</text>
         <text x="600" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Exclusive" data-fr="Contenu">Exclusive</text>
         <text x="600" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusif">drops</text>
         <text x="510" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Pre-show" data-fr="Pré-show">Pre-show</text>
         <text x="510" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="countdown" data-fr="décompte">countdown</text>
-        <text x="690" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Paris" data-fr="Chasse au">Paris</text>
-        <text x="690" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Treasure Hunt" data-fr="trésor">Treasure Hunt</text>
+        <text x="690" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Céline" data-fr="Coupe du">Céline</text>
+        <text x="690" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="world cup" data-fr="monde Céline">world cup</text>
         <text x="780" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Live" data-fr="Vote">Live</text>
-        <text x="780" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Vote" data-fr="encore">Vote</text>
+        <text x="780" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="vote" data-fr="encore">vote</text>
         <text x="870" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Watch" data-fr="Watch">Watch</text>
         <text x="870" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="party" data-fr="party">party</text>
         <text x="960" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Backstage" data-fr="Coulisses">Backstage</text>
         <text x="960" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="exclusives">drops</text>
         <text x="1085" y="265" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Monthly" data-fr="Drops">Monthly</text>
-        <text x="1085" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="Drops" data-fr="mensuels">Drops</text>
-        <text x="1180" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Concert" data-fr="Film du">Concert</text>
-        <text x="1180" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="film" data-fr="concert">film</text>
+        <text x="1085" y="276" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-family="Gilroy,sans-serif" font-size="10" data-en="drops" data-fr="mensuels">drops</text>
+        <text x="1180" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Best fan" data-fr="Meilleurs">Best fan</text>
+        <text x="1180" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="moments" data-fr="moments">moments</text>
         <text x="1270" y="265" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="Fan" data-fr="Retrou-">Fan</text>
         <text x="1270" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="reunion" data-fr="vailles">reunion</text>
         </g>
@@ -2082,7 +2085,7 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Keep <span class='gt'>rewarding them</span>" data-fr-html="Continuez à <span class='gt'>les récompenser</span>">
         Keep <span class="gt">rewarding them</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:780px;" data-en="Here's what it looks like. Four core product features inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day." data-fr="Voici ce que ça donne. Quatre expériences au cœur du Fanverse — chat, quêtes, collectibles, drops — gardent Céline et ses fans proches chaque jour.">
+      <p class="body-shrink-mobile" style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:780px;" data-en="Here's what it looks like. Four core product features inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day." data-fr="Voici ce que ça donne. Quatre expériences au cœur du Fanverse — chat, quêtes, collectibles, drops — gardent Céline et ses fans proches chaque jour.">
         Here's what it looks like. Four core product features inside the Fanverse — chat, quests, collectibles, drops — keeping Céline and her fans close every day.
       </p>
     </div>
@@ -2148,8 +2151,8 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;color:#fff;" data-i18n="html" data-en-html="Made unique to <span class='gt'>Céline</span>" data-fr-html="Pensé pour <span class='gt'>Céline</span>">
         Made unique to <span class="gt">Céline</span>
       </div>
-      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:720px;" data-en="See a library of experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore." data-fr="Découvrez une bibliothèque d'expériences taillées pour Céline. Quatre pensées pour Paris 2026, du premier test de dévouement aux mois qui suivent le dernier rappel.">
-        See a library of experiences tailored to Céline. Four shaped for Paris 2026, from the first test of devotion to the months after the final encore.
+      <p style="margin-top:16px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:720px;" data-en="Magic brings a catalog of 30+ experiences. Here are 4 we'd shape for Céline, from the first test of devotion to the months after the final encore." data-fr="Magic met à disposition un catalogue de 30+ expériences. En voici 4 pensées pour Céline, du premier test de dévouement aux mois qui suivent le dernier rappel.">
+        Magic brings a catalog of 30+ experiences. Here are 4 we'd shape for Céline, from the first test of devotion to the months after the final encore.
       </p>
     </div>
 
@@ -2161,19 +2164,20 @@ body.present-mode #present-arrows { display:flex !important; }
         </div>
         <div>
           <div class="phase-kicker" style="color:#1FCEFF;" data-en="Before" data-fr="Avant">Before</div>
-          <div class="phase-title" data-en="The Devotion Leaderboard" data-fr="Classement des plus dévoués">The Devotion Leaderboard</div>
+          <div class="phase-title" data-en="The devotion leaderboard" data-fr="Classement des plus dévoués">The devotion leaderboard</div>
           <div class="phase-body" data-en="Fans prove their devotion through a Céline quiz, streaming history and album collections. The most loyal earn priority in the ticket queue. A fair, transparent celebration." data-fr="Les fans prouvent leur dévouement à travers un quiz sur Céline, leur historique streaming et leurs collections d'albums. Les plus fidèles gagnent leur priorité. Une célébration juste et transparente.">Fans prove their devotion through a Céline quiz, streaming history and album collections. The most loyal earn priority in the ticket queue. A fair, transparent celebration.</div>
         </div>
       </div>
-      <!-- JOUR J -->
+      <!-- JOUR J — SIGNATURE -->
       <div class="phase-card">
-        <div class="phase-num-card" style="background:linear-gradient(135deg,rgba(140,60,255,0.14),rgba(140,60,255,0.02));border-color:rgba(140,60,255,0.35);">
+        <div class="phase-num-card" style="background:linear-gradient(135deg,rgba(140,60,255,0.28),rgba(140,60,255,0.04));border-color:rgba(140,60,255,0.7);box-shadow:0 0 0 1px rgba(140,60,255,0.25), 0 8px 32px rgba(140,60,255,0.18);position:relative;">
           <div class="phase-num" style="color:#8C3CFF;">02</div>
+          <div style="position:absolute;top:10px;right:14px;font-family:'Gilroy',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#8C3CFF;" data-en="✦ Signature" data-fr="✦ Signature">✦ Signature</div>
         </div>
         <div>
-          <div class="phase-kicker" style="color:#8C3CFF;" data-en="Concert Day" data-fr="Jour J">Concert Day</div>
-          <div class="phase-title" data-en="The Paris Treasure Hunt" data-fr="La chasse au trésor parisienne">The Paris Treasure Hunt</div>
-          <div class="phase-body" data-en="On concert days, teams from every country race through Paris in a Pokémon-Go-style treasure hunt. The top 25 win the ultimate prize: a meeting with Céline." data-fr="Les jours de concert, des équipes venues du monde entier courent dans Paris pour une chasse au trésor façon Pokémon Go. Les 25 meilleurs gagnent la récompense ultime : une rencontre avec Céline.">On concert days, teams from every country race through Paris in a Pokémon-Go-style treasure hunt. The top 25 win the ultimate prize: a meeting with Céline.</div>
+          <div class="phase-kicker" style="color:#8C3CFF;" data-en="Across the tour" data-fr="Pendant la tournée">Across the tour</div>
+          <div class="phase-title" data-en="The Céline world cup" data-fr="La coupe du monde Céline">The Céline world cup</div>
+          <div class="phase-body" data-en="The biggest international treasure hunt: teams from every country race through Paris on concert days, phone in hand, hunting clues across the city. The top 25 win the ultimate prize, a meeting with Céline." data-fr="La plus grande chasse au trésor internationale : des équipes venues du monde entier courent dans Paris les jours de concert, téléphone en main, à la recherche d'indices dans toute la ville. Les 25 meilleurs gagnent la récompense ultime, une rencontre avec Céline.">The biggest international treasure hunt: teams from every country race through Paris on concert days, phone in hand, hunting clues across the city. The top 25 win the ultimate prize, a meeting with Céline.</div>
         </div>
       </div>
       <!-- PENDANT -->
@@ -2182,8 +2186,8 @@ body.present-mode #present-arrows { display:flex !important; }
           <div class="phase-num" style="color:#FD3E84;">03</div>
         </div>
         <div>
-          <div class="phase-kicker" style="color:#FD3E84;" data-en="In the Venue" data-fr="Dans la salle">In the Venue</div>
-          <div class="phase-title" data-en="The Living Concert" data-fr="Le concert vivant">The Living Concert</div>
+          <div class="phase-kicker" style="color:#FD3E84;" data-en="In the venue" data-fr="Dans la salle">In the venue</div>
+          <div class="phase-title" data-en="The living concert" data-fr="Le concert vivant">The living concert</div>
           <div class="phase-body" data-en="Inside the venue, fans vote for the greatest Céline song of all time and choose a live encore with a unique orchestration. Every night becomes one of a kind." data-fr="Dans la salle, les fans votent pour la plus grande chanson de Céline et choisissent un rappel en direct avec une orchestration unique. Chaque soir devient inoubliable.">Inside the venue, fans vote for the greatest Céline song of all time and choose a live encore with a unique orchestration. Every night becomes one of a kind.</div>
         </div>
       </div>
@@ -2194,7 +2198,7 @@ body.present-mode #present-arrows { display:flex !important; }
         </div>
         <div>
           <div class="phase-kicker" style="color:#20D4B8;" data-en="After" data-fr="Après">After</div>
-          <div class="phase-title" data-en="The Months That Follow" data-fr="Les mois qui suivent">The Months That Follow</div>
+          <div class="phase-title" data-en="The months that follow" data-fr="Les mois qui suivent">The months that follow</div>
           <div class="phase-body" data-en="After the final encore, the bond keeps going. Monthly drops share the best moments with the fans in the Fanverse, rewarding everyone who joined the adventure." data-fr="Après le dernier rappel, le lien continue. Chaque mois, les meilleurs moments partagés avec les fans du Fanverse, pour récompenser ceux qui ont rejoint l'aventure.">After the final encore, the bond keeps going. Monthly drops share the best moments with the fans in the Fanverse, rewarding everyone who joined the adventure.</div>
         </div>
       </div>
@@ -2220,7 +2224,7 @@ body.present-mode #present-arrows { display:flex !important; }
       <div style="font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;max-width:52%;" data-i18n="html" data-en-html="Know your fans and<br><span class='gt'>reach them instantly</span>" data-fr-html="Connaissez vos fans,<br><span class='gt'>touchez-les instantanément</span>">
         Know your fans and<br><span class="gt">reach them instantly</span>
       </div>
-      <p style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="You've seen what fans experience. Here's what Céline's team sees in return. Magic Pulse turns every signal into a story: who each fan is, what they love, how they feel. So every outreach knows exactly where to land." data-fr="Vous avez vu ce que les fans vivent. Voici ce que l'équipe de Céline voit en retour. Magic Pulse transforme chaque signal en histoire : qui est chaque fan, ce qu'il aime, ce qu'il ressent. Pour que chaque message atteigne exactement sa cible.">
+      <p class="body-shrink-mobile" style="font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:716px;" data-en="You've seen what fans experience. Here's what Céline's team sees in return. Magic Pulse turns every signal into a story: who each fan is, what they love, how they feel. So every outreach knows exactly where to land." data-fr="Vous avez vu ce que les fans vivent. Voici ce que l'équipe de Céline voit en retour. Magic Pulse transforme chaque signal en histoire : qui est chaque fan, ce qu'il aime, ce qu'il ressent. Pour que chaque message atteigne exactement sa cible.">
         You've seen what fans experience. Here's what Céline's team sees in return. Magic Pulse turns every signal into a story: who each fan is, what they love, how they feel. So every outreach knows exactly where to land.
       </p>
       <div style="display:flex;flex-direction:column;gap:12px;margin-top:4px;max-width:51%;">
@@ -2277,6 +2281,13 @@ body.present-mode #present-arrows { display:flex !important; }
         A Fanverse is built for the top percent of your fanbase: the ones who stream every track, show up to every show, and never miss a drop. Ticket in hand or not, Magic makes their loyalty finally mean something.
       </p>
       <p style="font-size:22px;font-weight:700;letter-spacing:0.03em;" data-i18n="html" data-en-html="This is your Fanverse. <span style='color:#fff'>They've earned it.</span>" data-fr-html="Voici votre Fanverse. <span style='color:#fff'>Ils l'ont mérité.</span>">This is your Fanverse. <span style="color:#fff">They've earned it.</span></p>
+      <div style="margin-top:28px;position:relative;border-radius:18px;padding:2px;max-width:580px;animation:takeawayPulse 3s ease-in-out infinite;">
+        <div style="position:absolute;inset:0;border-radius:18px;border:3px solid transparent;background:linear-gradient(var(--border-angle,0deg),rgba(31,206,255,0.8),rgba(140,60,255,0.7),rgba(140,60,255,0.8),rgba(31,206,255,0.8)) border-box;-webkit-mask:linear-gradient(#fff 0 0) padding-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderShift 8s linear infinite;z-index:2;pointer-events:none;"></div>
+        <div style="padding:22px 26px;background:linear-gradient(140deg,rgba(31,206,255,0.08) 0%,rgba(140,60,255,0.14) 100%);border-radius:16px;position:relative;z-index:3;">
+          <div style="font-family:'Gilroy',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#1FCEFF;margin-bottom:10px;" data-en="✦ One more thing" data-fr="✦ Et en plus">✦ One more thing</div>
+          <p style="font-size:17px;line-height:1.55;font-weight:300;color:rgba(255,255,255,0.95);margin:0;" data-i18n="html" data-en-html="A surprise Céline Dion party, live-streamed in a <span style='color:#fff;font-weight:700'>second Paris venue</span> for the <span style='color:#fff;font-weight:700'>1,500 most devoted</span>. The concert becomes a citywide event." data-fr-html="Une Céline Dion party surprise, diffusée en direct dans une <span style='color:#fff;font-weight:700'>seconde salle parisienne</span> pour les <span style='color:#fff;font-weight:700'>1 500 fans les plus dévoués</span>. Le concert devient un événement à l'échelle de Paris.">A surprise Céline Dion party, live-streamed in a <span style="color:#fff;font-weight:700">second Paris venue</span> for the <span style="color:#fff;font-weight:700">1,500 most devoted</span>. The concert becomes a citywide event.</p>
+        </div>
+      </div>
     </div>
     <!-- Right: Pulsating Heart -->
     <div style="flex:0 0 420px;display:flex;align-items:center;justify-content:center;position:relative;overflow:visible;transform:translate(-80px, 50px);">
@@ -3418,12 +3429,14 @@ function setLang(lang) {
   repositionLegendLines();
   // Update revenue simulator dynamic labels
   try { recalculate(); } catch(e) {}
-  // Persist in URL
-  var url = new URL(window.location.href);
-  if (lang === 'fr') { url.searchParams.set('lang', 'fr'); }
-  else if (clientMode) { url.searchParams.set('lang', 'en'); }
-  else { url.searchParams.delete('lang'); }
-  window.history.replaceState({}, '', url.toString());
+  // Persist in URL — only when already in client mode (preserves shareable client URLs).
+  // In internal/presentation mode, never write ?lang= so the URL stays clean and reloads
+  // keep the editor view.
+  if (clientMode) {
+    var url = new URL(window.location.href);
+    url.searchParams.set('lang', lang === 'fr' ? 'fr' : 'en');
+    window.history.replaceState({}, '', url.toString());
+  }
 }
 
 // PDF Export
