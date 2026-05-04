@@ -1691,7 +1691,7 @@ body.present-mode #present-arrows { display:flex !important; }
       </p>
     </div>
     <!-- Timeline: single track, Before / During / After the concerts -->
-    <div style="flex:1;display:flex;align-items:center;">
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:stretch;gap:0;">
       <svg width="100%" height="100%" viewBox="0 0 1340 395" preserveAspectRatio="xMidYMid meet" fill="none">
         <defs>
           <linearGradient id="tlg" x1="0" y1="0" x2="1" y2="0">
@@ -1720,13 +1720,6 @@ body.present-mode #present-arrows { display:flex !important; }
         <path d="M 20 180 C 140 178, 260 172, 370 140 C 440 115, 470 92, 510 72 C 620 50, 720 36, 780 34 C 840 42, 920 52, 960 62 C 1020 78, 1060 86, 1085 92 C 1170 112, 1230 126, 1270 132 L 1320 140"
           stroke="url(#tlg)" stroke-width="2.8" fill="none"/>
 
-        <!-- Stat callouts -->
-        <g>
-          <rect x="690" y="-18" width="180" height="38" rx="8" fill="rgba(31,206,255,0.12)" stroke="rgba(31,206,255,0.45)" stroke-width="1"/>
-          <text x="780" y="0" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="15" font-weight="800" fill="#1FCEFF" data-en="8.5M more" data-fr="8,5M de plus">8.5M more</text>
-          <text x="780" y="13" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="1" data-en="REACHED VIA MAGIC" data-fr="TOUCHÉS PAR MAGIC">REACHED VIA MAGIC</text>
-        </g>
-        <text x="780" y="194" text-anchor="middle" font-family="Gilroy,sans-serif" font-size="11" font-weight="700" fill="rgba(255,255,255,0.65)" data-en="480K in the venue" data-fr="480K dans la salle">480K in the venue</text>
 
         <!-- Tick connectors from dots to icons (dashed, phase-colored) -->
         <g stroke-dasharray="2 3" stroke-width="1" fill="none">
@@ -1803,13 +1796,6 @@ body.present-mode #present-arrows { display:flex !important; }
         <text x="1270" y="276" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="10" data-en="reunion" data-fr="vailles">reunion</text>
         </g>
 
-        <!-- Legend (right-anchored block; line travels with text via x-anchored group) -->
-        <g transform="translate(1160, 368)">
-          <line x1="0" y1="0" x2="28" y2="0" stroke="#1FCEFF" stroke-width="2.8"/>
-          <text x="36" y="4" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic" data-en="Reached via Magic" data-fr="Touchés par Magic">Reached via Magic</text>
-          <line x1="0" y1="17" x2="28" y2="17" stroke="rgba(255,255,255,0.32)" stroke-width="1.6"/>
-          <text x="36" y="21" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic" data-en="Ticket holders only" data-fr="Billetés uniquement">Ticket holders only</text>
-        </g>
 
         <!-- PHASE LABELS — Before narrower, During widest, After narrower -->
         <g transform="translate(0,24)">
@@ -1833,7 +1819,20 @@ body.present-mode #present-arrows { display:flex !important; }
         </g>
 
       </svg>
-    </div>
+      <!-- Chart legend (left, stacked, under graph) -->
+      <div style="display:flex;flex-direction:column;gap:8px;margin-top:-60px;align-items:flex-start;font-family:'Gilroy',sans-serif;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="width:24px;height:2.5px;background:#1FCEFF;border-radius:2px;display:inline-block;"></span>
+          <span style="font-size:14px;font-weight:800;color:#1FCEFF;">8.5M</span>
+          <span style="font-size:13px;font-style:italic;color:rgba(255,255,255,0.85);" data-en="Reached via Magic" data-fr="Touchés par Magic">Reached via Magic</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="width:24px;height:1.5px;background:rgba(255,255,255,0.32);border-radius:2px;display:inline-block;"></span>
+          <span style="font-size:14px;font-weight:800;color:rgba(255,255,255,0.92);">480K</span>
+          <span style="font-size:13px;font-style:italic;color:rgba(255,255,255,0.55);" data-en="Ticket holders only" data-fr="Billetés uniquement">Ticket holders only</span>
+        </div>
+      </div>
+   </div>
   </div>
 </div>
 </div>
@@ -2140,7 +2139,7 @@ body.present-mode #present-arrows { display:flex !important; }
   #s-experiences .step-dot { width: 18px; height: 18px; border-radius: 50%; position: relative; z-index: 1; margin-top: 28px; margin-bottom: 22px; box-shadow: 0 0 0 4px rgba(13,27,66,0.9); align-self: flex-start; }
   #s-experiences .phase-kicker { font-family:'Gilroy',sans-serif; font-weight:700; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; }
   #s-experiences .phase-title { font-family:'Gilroy',sans-serif; font-weight:800; font-size: 20px; color:#fff; margin-top: 6px; line-height: 1.15; }
-  #s-experiences .phase-body { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.55; margin-top: 10px; }
+  #s-experiences .phase-body { font-size: 16px; font-weight: 300; color: var(--muted); line-height: 1.55; margin-top: 10px; }
 </style>
 <div class="si" style="background:#0D1B42">
   <div style="position:absolute;inset:0;background:#0D1B42;z-index:0;"></div>
