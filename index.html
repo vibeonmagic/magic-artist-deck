@@ -2130,7 +2130,7 @@ body.present-mode #present-arrows { display:flex !important; }
         <text x="1176" y="300" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.78)" font-family="Gilroy,sans-serif" font-size="12" data-en="After" data-fr="Après">After</text>
 
         <!-- Legend -->
-        <line id="leg-line-magic" x1="1191" y1="343" x2="1223" y2="343" stroke="#20D4B8" stroke-width="2.5"/>
+        <line id="leg-line-magic" x1="1191" y1="343" x2="1223" y2="343" stroke="#1FCEFF" stroke-width="2.5"/>
         <text id="leg-text-magic" x="1328" y="347" text-anchor="end" fill="rgba(255,255,255,0.85)" font-family="Gilroy,sans-serif" font-size="12" data-en="Magic engagement" data-fr="Engagement Magic">Magic engagement</text>
         <line id="leg-line-trad" x1="1191" y1="358" x2="1223" y2="358" stroke="rgba(255,255,255,0.3)" stroke-width="1.8"/>
         <text id="leg-text-trad" x="1328" y="362" text-anchor="end" fill="rgba(255,255,255,0.5)" font-family="Gilroy,sans-serif" font-size="12" font-style="italic" data-en="Traditional engagement" data-fr="Engagement traditionnel">Traditional engagement</text>
@@ -3555,7 +3555,7 @@ function repositionLegendLines() {
     if (!txt || !ln) return;
     var tw = txt.getComputedTextLength();
     var tx = parseFloat(txt.getAttribute('x'));
-    var x2 = tx - tw - 8;
+    var x2 = tx - tw - 16;
     var x1 = x2 - 32;
     ln.setAttribute('x1', x1);
     ln.setAttribute('x2', x2);
