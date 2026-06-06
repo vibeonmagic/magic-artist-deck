@@ -1316,9 +1316,12 @@ body.scroll-mode.client-mode .slide {
 body.client-mode #mobile-tap-zone { display:none !important; }
 body.client-mode #mobile-lang-bar { display:none !important; }
 
-/* Mobile auto-scroll — apply scroll-mode automatically */
+/* Mobile auto-scroll — apply scroll-mode automatically.
+   IMPORTANT: must override BOTH html and body. Base rule sets
+   `html, body { overflow:hidden }` — overriding only body leaves html
+   locked and the page is stuck on phones. */
 @media screen and (max-width: 768px) {
-  body { overflow-y:auto !important; overflow-x:hidden !important; height:auto !important; }
+  html, body { overflow-y:auto !important; overflow-x:hidden !important; height:auto !important; }
   #shell { position:static !important; overflow:visible !important; min-height:100vh; }
   #stage { display:block !important; overflow:visible !important; height:auto !important; padding:0 !important; }
   #scaler { width:100% !important; height:auto !important; transform:none !important; position:relative !important; display:block !important; overflow:visible !important; }
