@@ -14,7 +14,7 @@ An interactive, web-based presentation deck for Magic's artist partnerships. Bui
 ## Structure
 
 ```
-magic_artist_deck_v3.html   # The full deck (single-file HTML/CSS/JS)
+index.html                  # The full deck (single-file HTML/CSS/JS)
 brand elements/fonts/       # Gilroy font files (.woff)
 artifacts/                  # Supporting assets
 preview-server.js           # Local preview server (Node.js)
@@ -22,7 +22,7 @@ preview-server.js           # Local preview server (Node.js)
 
 ## Usage
 
-Open `magic_artist_deck_v3.html` in a browser, or run locally:
+Open `index.html` in a browser, or run locally:
 
 ```bash
 node preview-server.js

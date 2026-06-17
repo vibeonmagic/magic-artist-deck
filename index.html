@@ -2152,11 +2152,11 @@ body.present-mode #present-arrows { display:flex !important; }
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:60px 72px 56px;">
     <div style="flex-shrink:0;margin-bottom:28px;">
       <span class="tag" data-en="Always on" data-fr="Toujours actif">Always on</span>
-      <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Keep them coming back <span class='gt'>between editions</span>" data-fr-html="Faites-les revenir <span class='gt'>entre les éditions</span>">
-        Keep them coming back <span class="gt">between editions</span>
+      <div style="margin-top:16px;font-family:'Gilroy',sans-serif;font-weight:800;font-size:56px;line-height:1;letter-spacing:-0.025em;" data-i18n="html" data-en-html="Keep <span class='gt'>rewarding them</span>" data-fr-html="Continuez à <span class='gt'>les récompenser</span>">
+        Keep <span class="gt">rewarding them</span>
       </div>
-      <p style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:1060px;" data-en="The festival ends but the Fanverse doesn't. From gamified challenges and merch drops to fan chat and personalised nudges, Magic keeps your audience engaged and your revenue flowing between editions." data-fr="Le festival se termine mais le Fanverse continue. Des défis gamifiés aux drops de merch, en passant par le chat fan et les nudges personnalisés, Magic maintient votre festival actif et vos revenus en continu entre les éditions.">
-        The festival ends but the Fanverse doesn't. From gamified challenges and merch drops to fan chat and personalised nudges, Magic keeps your audience engaged and your revenue flowing between editions.
+      <p class="body-shrink-mobile" style="margin-top:14px;font-size:20px;line-height:1.65;font-weight:300;color:var(--muted);max-width:1040px;" data-en="Magic, for real. A range of experiences inside the Fanverse, shaped with your team (chat, treasure hunts, drops, collectibles, and more), keeping the artist and their fans close every day." data-fr="Magic en vrai. De nombreuses expériences au cœur du Fanverse à développer avec vos équipes (chat, chasse au trésor, drops, collectibles, etc.) rapprochent l'artiste et ses fans chaque jour.">
+        Magic, for real. A range of experiences inside the Fanverse, shaped with your team (chat, treasure hunts, drops, collectibles, and more), keeping the artist and their fans close every day.
       </p>
     </div>
     <!-- 4 feature panels -->
@@ -3028,7 +3028,7 @@ function exportEditedHtml() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'magic_artist_deck_v3_edited.html';
+  a.download = 'magic_artist_deck_edited.html';
   document.body.appendChild(a);
   a.click();
   a.remove();

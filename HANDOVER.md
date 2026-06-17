@@ -6,7 +6,7 @@ _Last updated: 2026-04-20. Written by Claude Code for the next session._
 
 You're in `/Users/laura/AI Projects/Magic Slides/magic-artist-deck-main-2`.
 
-- **Start preview:** `node preview-server.js` → http://localhost:4173/magic_artist_deck_v3.html
+- **Start preview:** `node preview-server.js` → http://localhost:4173/index.html
 - **Public GitHub Pages (main branch):**
   - Generic: https://lolacolafola.github.io/magic-artist-deck/
   - Celine Dion: https://lolacolafola.github.io/magic-artist-deck/celine-dion/
@@ -20,7 +20,7 @@ You're in `/Users/laura/AI Projects/Magic Slides/magic-artist-deck-main-2`.
 ```
 magic-artist-deck-main-2/
 ├── index.html                    ← generic WIP, served by GH Pages at /
-├── magic_artist_deck_v3.html     ← same content, kept for history
+├── index.html     ← same content, kept for history
 ├── celine-dion/
 │   ├── index.html                ← frozen Celine version
 │   └── Assets/Deck Edits/        ← Celine-specific phone screen swaps
@@ -78,7 +78,7 @@ Branch: `artist-deck-restructure`. `main` is up-to-date with the latest merged w
 macOS is case-insensitive; GitHub Pages (Linux) is case-sensitive. Before any push that touches asset references, verify every path matches git's tracked case:
 
 ```bash
-grep -oE "brand elements/[^\"')]*" magic_artist_deck_v3.html | sort -u | while read f; do
+grep -oE "brand elements/[^\"')]*" index.html | sort -u | while read f; do
   git ls-files --error-unmatch "$f" >/dev/null 2>&1 && echo "OK $f" || echo "MISS $f"
 done
 ```

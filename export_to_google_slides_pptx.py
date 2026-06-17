@@ -14,7 +14,7 @@ from pptx.util import Emu
 
 
 ROOT = Path(__file__).resolve().parent
-HTML_PATH = ROOT / "magic_artist_deck_v3.html"
+HTML_PATH = ROOT / "index.html"
 OUTPUT_DIR = ROOT / "artifacts"
 RENDER_DIR = OUTPUT_DIR / "rendered_slides"
 PPTX_PATH = OUTPUT_DIR / "magic_artist_deck_google_slides_import.pptx"

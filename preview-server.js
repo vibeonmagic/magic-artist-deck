@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
   const rawUrl = req.url || '/';
   const cleanUrl = rawUrl.split('?')[0].split('#')[0];
   let relPath = decodeURIComponent(cleanUrl);
-  if (relPath === '/') relPath = '/magic_artist_deck_v3.html';
+  if (relPath === '/') relPath = '/index.html';
 
   const target = path.resolve(root, `.${relPath}`);
   if (!target.startsWith(root)) {
